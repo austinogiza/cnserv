@@ -1,0 +1,281 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Poppins !important;
+}
+
+body{
+	background: url('../images/business.jpg') no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+}
+
+.logo {
+
+	line-height: 40px;
+	float: left;
+	margin: 1.2em 0 0 2.2em;
+	font-weight: bolder;
+	color: #fff;
+
+}
+
+.nav{
+	line-height: 40px;
+	margin: 1.2em;
+	position: absolute;
+	left: 30%;
+	font-size: 20px;
+	top: -4%;
+	text-transform: uppercase;
+
+}
+
+.nav nav ul{
+	cursor: pointer;
+}
+.nav nav ul li{
+transition: 0.4s
+	font-weight: 700;
+	list-style-type: none;
+	color: #fff;
+	display: inline-block;
+	padding-right: 36px;
+}
+
+.nav nav ul li:hover{
+color: #6ab04c;
+transform: scale(1.1);
+}
+.social-media{
+	position: absolute;
+	top: 30%;
+	left: 1%;
+	transform: translate(-50%);
+	cursor: pointer;
+	font-size: 40px;
+	color: #1AD4E0;
+
+}
+.social-media a{
+	list-style-type: none;
+	text-decoration: none;
+	color: #1AD4E0;
+}
+
+.social-media ul li{
+	list-style-type: none;
+	color: #fff;
+	padding-top: 20px; 
+}
+
+.social-media ul li:hover{
+
+transform: scale(1.3);	
+}
+.side-strip{
+	position: absolute;	
+	top: 50%;
+	transform: translateY(-50%);
+	right: -8em;
+	transform: rotate(90deg);
+	color: #141313;
+	letter-spacing: 4px;
+	line-height: 10px;
+	font-size: 25px;
+	text-shadow: 1px 1px 1px #000, 
+               3px 3px 5px blue;
+	text-transform: uppercase;
+}
+
+.header{
+	position: absolute;
+	top: 38%;
+	left: 46%;
+	transform: translate(-50%, -50%);
+}
+
+.header h1 {
+	color: #fff;
+	font-weight: bolder;
+	font-size: 75px;
+}
+
+.header p {
+	color: #fff;
+	font-weight: lighter;
+}
+
+.header button{
+	margin-top: 12px;
+	border: none;
+	padding: 16px 40px;
+	background: #fff;
+	font-weight: 600;
+	font-size: 12px;
+	box-shadow: 0 8px 6px -6px black;
+	border-bottom-right-radius: 12px; 
+	border-top-left-radius: 12px;
+}
+.header button:hover{
+	  color: green;
+	  background: #49D7EC;
+ transition: 0.5s;
+ transform: scale(1.1);
+}
+.bottom-bar {
+
+	color: #fff;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+}
+
+.row{
+	padding: 1.2em 2.4em 2em 2.6em;
+	background: #000;
+	border-bottom-right-radius: 12px; 
+	border-top-left-radius: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: absolute;
+	top: 120%;
+ margin-left: 10px;
+ margin-right: 10px;
+
+}
+
+.bottom-bar h6{
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.bottom-bar p{
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.col-lg-4{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 30%;
+
+}
+
+.pricelist{
+position: absolute;
+	top: 140%;
+	width: 100%;
+}
+.pricing-table{
+	
+	margin-right: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
+}
+.col{
+	float: 25%;
+	padding: 10px;
+	max-width: 320px;
+	box-sizing: border-box;
+}
+
+.table{
+	background: #fff;
+	padding: 40px 20px;
+	font-family: "montserrat", sans-serif;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 10px #00000070;
+}
+.col:hover{
+	transform: scale(1.1);
+}
+
+.table h2{
+	text-transform: uppercase;
+}
+.table ul {
+	margin: 0;
+	padding: 0;
+}
+
+.table ul li{
+	padding: 10px 0;
+	list-style-type: none;
+}
+
+.price{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.price span{
+	display: block;
+	font-size: 14px;
+
+}
+
+ .table a{
+ 	text-decoration: none;
+ 	color: #2c3a50;
+ 	border: 2px solid #2c3a50;
+ 	display: block;
+ 	margin-right: 10px 0;
+ 	padding: 10px 0;
+ 	text-transform: uppercase;
+ 	font-size: 14px;
+ 	border-radius: 40px;
+ 	transition: 0.5s linear;
+ 	text-align: center;
+ }
+
+ .table a:hover{
+ 	background: #2c3a50;
+ 	color: #fff;
+
+ }
+
+.pop {
+	background:  #2c3a50;
+	color: #fff;
+	transform: rotate(45deg);
+	padding: 10px 45px;
+	position: absolute;
+	top: 16px;
+	right: -34px;
+}
+@media screen and (max-width: 900px) {
+	.nav nav{display: none;}
+	.pricelist{
+		position: absolute;
+		top: 220%;
+	}
+	.col-lg-4{
+		display: block;
+		width: 75%;
+		border-bottom: 1px solid white;
+		
+	}
+	.row{
+		align-items: center;
+	}
+
+	.col{
+		flex: 50%;
+	}
+}
+@media screen and (max-width: 900px) {
+
+	.col{
+		flex: 100%;
+	}
+}
